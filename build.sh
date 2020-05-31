@@ -1,7 +1,7 @@
 #!/bin/bash
 set -x -e
 
-BUILD_ARCHS=${BUILD_ARCHS:-amd64 arm64 arm ppc64le}
+BUILD_ARCHS=${BUILD_ARCHS:-amd64 386}
 
 mkdir -p dist
 for arch in ${BUILD_ARCHS}; do
